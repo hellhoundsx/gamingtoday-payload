@@ -16,6 +16,17 @@ export const Header: GlobalConfig = {
         link({
           appearances: false,
         }),
+        {
+          name: 'subMenu',  // Add a sub-menu field for nested links
+          type: 'array',
+          fields: [
+            link({
+              appearances: false,
+            }),
+          ],
+          maxRows: 5,  // Maximum number of sub-menu items
+          label: 'Sub Menu', // Label for the sub-menu
+        },
       ],
       maxRows: 7,
     },
